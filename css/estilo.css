@@ -2,16 +2,62 @@
     background-color: rgb(142, 65, 205);
 }
 
-#inicial .nav-link{
-    color: white
+#navegacao .nav-link{
+    color: white;
+    padding: 4px 16px;
 }
 
-#inicial .nav-item :hover{
+#navegacao .nav-item :hover{
     background-color: rgb(187, 65, 167);
+    border-radius: 15px;
 }
 
-.logo{
+#inicio{
+    max-height: 95vh;
+    height: auto;
+}
+
+#inicio img{
+    object-fit: cover;
     overflow: hidden;
-    max-width: 30%;
+    filter: brightness(0.5);
 }
 
+.navigation{ 
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation__content ul li div{
+    padding: 8px 16px;
+}
+
+.navbar-nav{ 
+    gap: 2rem;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.text{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+#inicio{
+    padding: 50px;
+    background-color: antiquewhite;
+    margin-top: 5%;
+}
+
+#perfil{
+    max-width: 60%;
+    height: auto;
+    border-radius: 50rem;
+}
