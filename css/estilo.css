@@ -1,0 +1,17 @@
+.bg-pink{
+    background-color: rgb(142, 65, 205);
+}
+
+#inicial .nav-link{
+    color: white
+}
+
+#inicial .nav-item :hover{
+    background-color: rgb(187, 65, 167);
+}
+
+.logo{
+    overflow: hidden;
+    max-width: 30%;
+}
+
