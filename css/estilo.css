@@ -7,10 +7,15 @@
     padding: 4px 16px;
 }
 
-.nav-item:hover{
+/* .nav-item:hover{
     background-color: rgb(187, 65, 167);
     border-radius: 2rem;
+    border-bottom: 5px;
     transition: background-color 0.6s ease, border-radius 0.6s ease;
+} */
+
+.nav-item:hover{
+    border: 5px solid purple;
 }
 
 #inicio{
