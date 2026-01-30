@@ -6,45 +6,54 @@
     <title>Portifolio</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg bg-pink navigation" id="navegacao">
         <div class="navigation__content">
             <ul class="navbar-nav">
-                <li class="nav-item borda">
-                    <a href="#" class="nav-link">Inicio</a>
+                <li class="item">
+                    <a href="index.html" class="nav-link">
+                        <span class="fa-house fa-solid"></span>
+                        <span>Início</span>
+                    </a>
                 </li>
-                <li class="nav-item borda">
-                    <a href="#" class="nav-link">Sobre</a>
+                <li class="item">
+                    <a href="sobre.html" class="nav-link">
+                        <span class="fa-user fa-solid"></span>
+                        <span>Sobre</span>
+                    </a>
                 </li>
-                <li class="nav-item borda">
-                    <a href="#" class="nav-link">Obras</a>
+                <li class="item ">
+                    <a href="obras.html" class="nav-link">
+                        <span class="fa-paintbrush fa-solid"></span>
+                        <span>Obras</span>
+                    </a>
                 </li>
-                <li class="nav-item borda">
-                    <a href="#" class="nav-link">Compre sua arte!</a>
+                <li class="item">
+                    <a href="compras.html" class="nav-link">
+                        <span class="fa-bag-shopping fa-solid"></span>
+                        <span>Compre sua arte!</span>
+                    </a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <nav class="container" id="inicio">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="./img/hello_kitty.jpg" id="perfil">
+    <nav class="container-fluid">
+        <div class="row" id="inicio">
+            <div class="col-md-4 p-0 col-sd-2">
+                <img src="./img/img_inicio.jpg">
             </div>
-            <div class="col-md-8">
-                <h1 class="text-primary" id="titulo-inicio">
-                    paula
-                </h1>
-                <p class="text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
+            <div class="col-md-6 col-sd-4">
+                <h1 class="texto " id="titulo-inicio">Bem-vindo ao meu Portfólio de Arte!</h1>
+                <p class="texto">Descubra minhas criações e projetos artísticos.</p>
+                <p class="texto">Explore minhas obras, conheça minha trajetória e entre em contato para colaborações.</p>
             </div>
         </div>
     </nav>
     
-
+    <script src="./js/java.js"></script>
     <link rel="stylesheet" href="./js/bootstrap.bundle.min.js">
 </body>
 </html>
