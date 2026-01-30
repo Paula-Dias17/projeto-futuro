@@ -5,6 +5,7 @@ body{
     letter-spacing: 0.4px;
     line-height: 1.2; 
     overflow: hidden;
+    background-color: antiquewhite;
 }
 
 :root {
@@ -15,7 +16,7 @@ body{
   --bege-card: #F7E3C8;
   --azul-profundo: #1E2A78;
   --texto-principal: #2B2B2B;
-  --rosa-destaque: #E86FB7;
+  --rosa-destaque: #bc4b8f;
 }
 
 .bg-pink{
@@ -33,19 +34,22 @@ body{
 
 .item.hovered {
     background-color: rgb(187, 65, 167);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .active{
-  border-bottom: 2px solid pink;
+    background-color: var(--lilas);
+    border-bottom: 2px solid var(--bege-fundo);
+    border-radius: 10px;
+}
+
+.active span{
+    color: var(--roxo-escuro);
+    font-weight: bold;
 }
 
 span{
     margin-left: 5px;
-}
-
-#inicio{
-    background-color: antiquewhite;
 }
 
 #inicio img{
@@ -69,16 +73,6 @@ span{
     gap: 2rem;
 }
 
-body{
-    background-color: whitesmoke;
-}
-
-#perfil{
-    max-width: 60%;
-    height: auto;
-    border-radius: 50rem;
-}
-
 #titulo-inicio{
     align-items: center;
     margin-top: 20%;
@@ -90,4 +84,21 @@ body{
 .texto{
     margin-right: 1rem;
     font-size: 1.5rem;
+    color: var(--rosa-destaque);
+}
+
+#sobre{
+    padding: 4rem 0;
+}
+
+#titulo-sobre{
+    align-items: center;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: var(--roxo-escuro);
+}
+
+#perfil{
+    max-width: 100%;
+    border-radius: 50rem;
 }
