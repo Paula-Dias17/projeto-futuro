@@ -197,8 +197,8 @@ span{
 }
 
 .titulo-obras{
-    background-color: var(--lilas);
-    color: var(--roxo-escuro);
+    background-color: var(--roxo-principal);
+    color: whitesmoke;
     font-style: bold;
     font-size: 2rem;
     letter-spacing: 4px;
