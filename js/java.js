@@ -21,3 +21,18 @@ if (link.getAttribute("href") === currentPage) {
     link.classList.add("active");
 }
 });
+
+
+// poli
+const numeros = document.querySelectorAll('.interacao');
+
+// para cada card
+numeros.forEach(contato => {
+    contato.addEventListener('mouseenter', () => {
+        contato.classList.add('hovered');
+    });
+
+    contato.addEventListener('mouseleave', () => {
+        contato.classList.remove('hovered');
+    });
+});

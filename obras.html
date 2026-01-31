@@ -4,46 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-pink navigation" id="navegacao">
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-roxo navigation" id="navegacao">
         <div class="navigation__content">
             <ul class="navbar-nav">
                 <li class="item">
-                    <a href="index.html" class="nav-link">Incio</a>
+                    <a href="index.html" class="nav-link">
+                        <span class="fa-house fa-solid"></span>
+                        <span>Início</span>
+                    </a>
                 </li>
                 <li class="item">
-                    <a href="sobre.html" class="nav-link">Sobre</a>
+                    <a href="sobre.html" class="nav-link">
+                        <span class="fa-user fa-solid"></span>
+                        <span>Sobre</span>
+                    </a>
                 </li>
                 <li class="item ">
-                    <a href="obras.html" class="nav-link">Obras</a>
+                    <a href="obras.html" class="nav-link">
+                        <span class="fa-paintbrush fa-solid"></span>
+                        <span>Obras</span>
+                    </a>
                 </li>
                 <li class="item">
-                    <a href="compras.html" class="nav-link">Compre sua arte!</a>
+                    <a href="compras.html" class="nav-link">
+                        <span class="fa-bag-shopping fa-solid"></span>
+                        <span>Compre sua arte!</span>
+                    </a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <nav class="container" id="inicio">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="./img/hello_kitty.jpg" id="perfil">
-            </div>
-            <div class="col-md-8">
-                <h1 class="text-primary" id="titulo-inicio">
-                    paula
-                </h1>
-                <p class="text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
+    <div class="card border-0 " id="obras">
+        <div class="border-0 text-center" id="body-card">
+            <!-- 
+            Communication Arts Awards
+
+            World Illustration Awards
+
+            3x3 Illustration Annual
+
+            Adobe Design Achievement Awards
+
+            Behance Featured / Awards (bem usado em portfólios)-->
+            <div class="container">
+                <div class="row m-4">
+                    <section class="col-md-12">
+                        <img src="./img/logo-rosa.png" class="logo">
+                    </section>
+                </div>
+                <div class="row">
+                    <section class="col-md-12">
+                        <span class="fa-solid fa-award titulo-obras"></span>
+                    </section>
+                </div>
+                <div class="row m-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 interacao">
+                            <img class="card-img card-img-top obras" src="./img/obras/arte (5).png">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">World Illustration Awards</h4>
+                                <p class="card-text">Hatsune Miku é uma cantora virtual criada em 2007 pela Crypton Future Media. Ela é o símbolo da união entre tecnologia e arte.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4">
+                        <div class="card h-100 interacao">
+                            <img class="card-img card-img-top obras" src="./img/obras/arte (3).png">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Communication Arts Awards</h4>
+                                <p class="card-text">Mesmo sendo virtual, Miku conquistou palcos reais. Ela faz shows com hologramas 3D ao redor do mundo. Sua energia contagiante atrai fãs de todas as idades e países.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4">
+                        <div class="card h-100 interacao">
+                            <img class="card-img card-img-top obras" src="./img/obras/arte (4).png">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Prémio de Criatividade</h4>
+                                <p class="card-text">O prémio aclamado por vários artistas. Em outubro de 2036 ganhei em primeiro lugar a categoria de criatividade apresentando capacidade intelectual e criatividade alem de técnica</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 interacao">
+                            <img class="card-img card-img-top obras" src="./img/obras/arte (1).png">
+                            <h4 class="card-img-top">A Voz do Futuro</h4>
+                            <div class="card-body text-center">
+                                <p class="card-text">Hatsune Miku é uma cantora virtual criada em 2007 pela Crypton Future Media. Ela é o símbolo da união entre tecnologia e arte.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4">
+                        <div class="card h-100 interacao">
+                            <img class="card-img card-img-top obras" src="./img/obras/arte (7).png">
+                            <h4 class="card-img-top">Fama Mundial</h4>
+                            <div class="card-body text-center">
+                                <p class="card-text">Mesmo sendo virtual, Miku conquistou palcos reais. Ela faz shows com hologramas 3D ao redor do mundo. Sua energia contagiante atrai fãs de todas as idades e países.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4">
+                        <div class="card h-100 interacao">
+                            <img class="card-img card-img-top obras" src="./img/obras/arte (7).png">
+                            <h4 class="card-img-top">Comunidade Criativa</h4>
+                            <div class="card-body text-center">
+                                <p class="card-text">Milhares de artistas e fãs colaboram para dar vida à Miku. Músicas, clipes, jogos e fanarts são criados todos os dias, mostrando que ela não pertence a uma só pessoa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    
-    
+    </div>
     <script src="./js/java.js"></script>
     <link rel="stylesheet" href="./js/bootstrap.bundle.min.js">
 </body>

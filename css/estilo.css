@@ -4,9 +4,18 @@ body{
     font-family: 'Nunito Sans';
     letter-spacing: 0.4px;
     line-height: 1.2; 
-    overflow: hidden;
     background-color: antiquewhite;
 }
+
+/* Rosa antigo: #D48FB3
+
+Lilás rosado: #CDB4DB
+
+Bege rosado: #F6E1D3
+
+Branco quente: #FFF8F2
+
+Marrom suave (texto): #4A3F35 */
 
 :root {
   --roxo-principal: #8E41CD;
@@ -17,6 +26,11 @@ body{
   --azul-profundo: #1E2A78;
   --texto-principal: #2B2B2B;
   --rosa-destaque: #bc4b8f;
+  --rosa-principal: rgb(216, 109, 198);
+  --rosa: #E86FB7;
+  --rosa-antigo: #D48FB3;
+  --lilás-rosado: #CDB4DB;
+  --marrom-suave: #4A3F35;
 }
 
 .bg-roxo{
@@ -25,6 +39,10 @@ body{
 
 .bg-pink{
     background-color: var(--rosa-destaque);
+}
+
+.bg-lilas{
+    background-color: var(--lilas);
 }
 
 .color-roxo{
@@ -65,8 +83,7 @@ span{
 }
 
 #inicio img{
-    max-width: 80%;
-    height: auto;
+    height:  662px;
     object-fit: cover;
     filter: brightness(0.5);
 }
@@ -130,3 +147,69 @@ span{
     text-align: justify;
     font-weight: 500;
 }
+
+#sobre .btn{
+    align-items: center;
+    color: whitesmoke;
+    margin-right: 10px;
+}
+
+.contatos{
+    margin: 4rem 0 0 20%;
+}
+
+.interacao{
+    background-color: var(--roxo-principal);
+    transition: all 0.2s ease-in-out; 
+}
+
+.interacao.hovered{
+    background-color: var(--lilas);
+    transform: translateY(-10px) scale(1.05); /* Levanta e aumenta */
+    outline: 1px solid var(--roxo-escuro);
+}
+
+.interacao.hovered span{
+    color: var(--roxo-escuro);
+}
+
+#obras{
+    background-color: antiquewhite;
+}
+
+.obras{
+    background-color: var(--lilás-rosado);
+    max-width: 100%;
+}
+
+#obras .card{
+    background-color: var(--roxo-principal);
+    color: whitesmoke;
+}
+
+#obras .interacao.hovered{
+    background-color: var(--rosa-destaque);
+    
+}
+
+#obras .interacao.hovered .obras{
+    background-color: var(--rosa-antigo);
+}
+
+.titulo-obras{
+    background-color: var(--lilas);
+    color: var(--roxo-escuro);
+    font-style: bold;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    margin-top: 35px;
+    padding: 10px;
+    border-radius: 2rem;
+    border-bottom: 2px solid var(--roxo-escuro);
+}
+
+.logo{
+    height: 200px;
+    width: auto;
+}
+
