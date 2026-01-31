@@ -19,8 +19,20 @@ body{
   --rosa-destaque: #bc4b8f;
 }
 
-.bg-pink{
+.bg-roxo{
     background-color: var(--roxo-principal);
+}
+
+.bg-pink{
+    background-color: var(--rosa-destaque);
+}
+
+.color-roxo{
+    color: var(--roxo-escuro);
+}
+
+.color-pink{
+    color: var(--rosa-destaque);
 }
 
 #navegacao .nav-link{
@@ -32,7 +44,7 @@ body{
     transition: background-color 0.6s ease, border-radius 0.3s ease;
 }
 
-.item.hovered {
+.item.hovered{
     background-color: rgb(187, 65, 167);
     border-radius: 10px;
 }
@@ -83,22 +95,38 @@ span{
 
 .texto{
     margin-right: 1rem;
-    font-size: 1.5rem;
-    color: var(--rosa-destaque);
+    font-size: 1.5rem
 }
 
 #sobre{
-    padding: 4rem 0;
+    margin: 60px 0px 0px 30px;
 }
 
-#titulo-sobre{
+/* #titulo-sobre{
     align-items: center;
-    font-size: 4.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: var(--roxo-escuro);
-}
+} */
 
 #perfil{
-    max-width: 100%;
+    max-width: 20rem;
+    height: auto;
     border-radius: 50rem;
+}
+
+.name, .sub-titulo{
+    font-weight: 700;
+}
+
+#sobre .name {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+#sobre .about {
+    margin-top: 16px;
+    margin-right: 60px;
+    text-align: justify;
+    font-weight: 500;
 }
