@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 body{
-    font-family: 'Nunito Sans';
+    font-family: 'Nunito Sans', Arial, sans-serif !important;
     letter-spacing: 0.4px;
     line-height: 1.2; 
     background-color: antiquewhite;
@@ -211,5 +211,40 @@ span{
 .logo{
     height: 200px;
     width: auto;
+}
+
+
+/* carros */
+
+#cards .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#cards {
+  margin-top: 60px; 
+}
+
+#cards .card {
+  width: 400px;
+  border-radius: 8px;
+}
+
+/* Cards laterais */
+.card-lateral {
+    position: relative;
+    z-index: 1;
+    transform: scale(0.9);
+    filter: brightness(0.5);
+    opacity: 80%;
+}
+
+/* Card central (em destaque) */
+.card-central {
+  position: relative;
+  z-index: 2;
+  margin: 0 -150px; /* faz sobrepor os laterais */
 }
 
