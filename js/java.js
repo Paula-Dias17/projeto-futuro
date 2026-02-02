@@ -68,3 +68,39 @@ proxima = () => {
 setInterval(() => {
     proxima();
 }, 3000);
+
+
+
+const obras = [
+    "./img/obras/arte (1).png",
+    "./img/obras/arte (3).png",
+    "./img/obras/arte (4).png",
+    "./img/obras/arte (5).png",
+    "./img/obras/arte (6).png",
+    "./img/obras/arte (7).png"
+];
+
+let poss = 0;
+const carrossel1 = document.querySelector("#artes");
+
+anterior = () => {
+    if (poss - 1 >= 0) {
+        poss--;
+    } else {
+        poss = obras.length - 1;
+    }
+
+    carrossel1.src = obras[poss];
+    contador.innerHTML = `${poss + 1}/${obras.length}`;
+}
+
+proxima = () => {
+    poss = (poss + 1) % obras.length;
+    carrossel1.src = obras[poss];
+    contador.innerHTML = `${poss + 1}/${obras.length}`;
+}
+
+// ⏱️ troca automática
+setInterval(() => {
+    proxima();
+}, 30);

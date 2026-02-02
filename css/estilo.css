@@ -237,7 +237,7 @@ span{
     position: relative;
     z-index: 1;
     transform: scale(0.9);
-    filter: brightness(0.5);
+    filter:grayscale(0.9) blur(1.5px) brightness(0.7);
     opacity: 80%;
 }
 
@@ -246,10 +246,24 @@ span{
   position: relative;
   z-index: 2;
   margin: 0 -150px; /* faz sobrepor os laterais */
+  border: 2px solid #2B2B2B;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px var(--azul-profundo);
 }
 
-#cards span {
-    background-color: #F7E3C8;
-    color: var(--azul-profundo);
+.setinha {
+    position: absolute;
+    top: 40%;
+    z-index: 3; /* maior que os cards */
+    font-size: 2rem;
+    color: var(--bege-fundo);
+    background-color: var(--roxo-principal);
+    border: 2px solid #2B2B2B;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 80px;
 }
 
+.seta-esquerda {
+  right: 935px; /* joga pra fora do card */
+}
