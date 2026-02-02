@@ -248,3 +248,8 @@ span{
   margin: 0 -150px; /* faz sobrepor os laterais */
 }
 
+#cards span {
+    background-color: #F7E3C8;
+    color: var(--azul-profundo);
+}
+
