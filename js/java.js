@@ -70,6 +70,37 @@ setInterval(() => {
 }, 3000);
 
 
+function CriarCarrossel(imagens, elementos, intervalo) {
+    let inicio = 0;
+
+    function atualizar() {
+        elementos.forEach((el, i) => {
+            const index = (inicio + i) % imagens.length;
+
+            el.classList.add("troca");
+
+            setTimeout(() => {
+                el.src = imagens[index];
+                el.classList.remove("troca");
+            }, 200);
+        });
+    }
+
+    function proxima() {
+        inicio = (inicio + 1) % imagens.length;
+        atualizar();
+    }
+
+    function anterior() {
+        inicio = (inicio - 1 + imagens.length) % imagens.length;
+        atualizar();
+    }
+
+    atualizar();
+    setInterval(proxima, intervalo);
+
+    return { proxima, anterior };
+}
 
 const obras = [
     "./img/obras/arte (1).png",
@@ -80,27 +111,9 @@ const obras = [
     "./img/obras/arte (7).png"
 ];
 
-let poss = 0;
-const carrossel1 = document.querySelector("#artes");
+const carrosselArtes = document.querySelectorAll(".artes");
 
-anterior = () => {
-    if (poss - 1 >= 0) {
-        poss--;
-    } else {
-        poss = obras.length - 1;
-    }
+const artes = CriarCarrossel(obras, carrosselArtes, 4500);
 
-    carrossel1.src = obras[poss];
-    contador.innerHTML = `${poss + 1}/${obras.length}`;
-}
-
-proxima = () => {
-    poss = (poss + 1) % obras.length;
-    carrossel1.src = obras[poss];
-    contador.innerHTML = `${poss + 1}/${obras.length}`;
-}
-
-// ⏱️ troca automática
-setInterval(() => {
-    proxima();
-}, 30);
+document.querySelector(".seta-esquerda").onclick = artes.anterior;
+document.querySelector(".seta-direta").onclick = artes.proxima;

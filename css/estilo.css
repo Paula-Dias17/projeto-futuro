@@ -262,8 +262,20 @@ span{
     padding: 10px;
     border-radius: 10px;
     margin-right: 80px;
+    box-shadow: 0 10px 25px var(--azul-profundo);
+    cursor: pointer;
 }
 
 .seta-esquerda {
   right: 935px; /* joga pra fora do card */
+}
+
+
+.artes {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.troca {
+  transform: scale(0.9);
+  opacity: 0.5;
 }
