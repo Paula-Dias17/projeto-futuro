@@ -117,3 +117,39 @@ const artes = CriarCarrossel(obras, carrosselArtes, 4500);
 
 document.querySelector(".seta-esquerda").onclick = artes.anterior;
 document.querySelector(".seta-direta").onclick = artes.proxima;
+
+
+
+const items = document.querySelectorAll(".qtd");
+const carrinho = document.querySelector("#carrinho");
+for (i of items){
+    i.addEventListener("input", () =>{
+        carrinho.innerHTML = "";
+        items.forEach(p =>{
+            const qtd = Number(p.value);
+            const valor = Number(p.dataset.preco);
+            const nome = p.dataset.nome;
+            if (qtd>0){
+                const li = document.createElement("li");
+                li.classList.add("list-group-item");
+                li.innerHTML = `${nome} * ${qtd} = ${valor * qtd}`
+                carrinho.appendChild(li);
+            }
+        })
+    })
+}
+
+const form = document.querySelector("#formCarrinho");
+const resultado = document.querySelector("#resultado");
+form.addEventListener("submit", e => {
+    e.preventDefault();
+    let total = 0;
+    items.forEach(p =>{
+        const qtd = Number(p.value);
+        const valor = Number(p.dataset.preco);
+        total += qtd * valor;
+    })
+    total = total * 0.9;
+    resultado.classList.remove("d-none");
+    resultado.innerHTML = `Total a pagar com desconto de 10% = R$ ${total}`;
+}); 

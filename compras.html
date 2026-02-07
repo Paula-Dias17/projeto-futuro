@@ -47,27 +47,27 @@
                 <div class="cards">
                     <div>
                         <span class="fa-solid fa-angle-left setinha seta-esquerda interacao"></span>
-                        <div class="card h-100 card-lateral">
+                        <div class="card h-100 card-lateral bg-roxo">
                             <img class="card-img card-img-top obras artes" src="./img/obras/arte (1).png">
                             <div class="card-body text-center">
-                                <span class="fa-solid fa-cart-plus"></span>
+                                <span class="fa-solid fa-face-smile color-white"></span>
                             </div>
                         </div>
                     </div>
                     <div class="card-central artes">
-                        <div class="card h-100">
+                        <div class="card h-100 bg-roxo">
                             <img class="card-img card-img-top obras artes" src="./img/obras/arte (3).png">
                             <div class="card-body text-center">
-                                <span class="fa-solid fa-cart-plus"></span>
+                                <span class="fa-solid fa-face-smile color-white"></span>
                             </div>
                         </div>
                     </div>
                     <div>
                         <span class="fa-solid fa-angle-right setinha seta-direta interacao"></span>
-                        <div class="card h-100 card-lateral">
+                        <div class="card h-100 card-lateral bg-roxo">
                             <img class="card-img card-img-top obras artes" src="./img/obras/arte (4).png">
                             <div class="card-body text-center">
-                                <span class="fa-solid fa-cart-plus"></span>
+                                <span class="fa-solid fa-face-smile color-white"></span>
                             </div>
                         </div>
                     </div>
@@ -75,6 +75,53 @@
             </section>
         </div>
     </div>
+
+    <section>
+        <div class="container py-4">
+            <h2 class="mb-4">🛒 Carrinho de Compras</h2>
+            <form id="formCarrinho">
+                <!-- Produtos -->
+                <div class="card p-3 mb-4">
+                    <h5>Produtos</h5>
+
+                    <div class="row align-items-center mb-2">
+                        <div class="col">Mouse – R$ 50</div>
+                        <div class="col-3">
+                            <input type="number" class="form-control qtd" data-nome="Mouse" data-preco="50" value="0"
+                                min="0">
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center mb-2">
+                        <div class="col">Teclado – R$ 120</div>
+                        <div class="col-3">
+                            <input type="number" class="form-control qtd" data-nome="Teclado" data-preco="120" value="0"
+                                min="0">
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center">
+                        <div class="col">Fone – R$ 80</div>
+                        <div class="col-3">
+                            <input type="number" class="form-control qtd" data-nome="Fone" data-preco="80" value="0"
+                                min="0">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carrinho -->
+                <h5>Carrinho</h5>
+                <ul id="carrinho" class="list-group mb-3"></ul>
+
+                <button class="btn btn-primary w-100">
+                    Finalizar compra
+                </button>
+            </form>
+
+            <!-- Total -->
+            <div id="resultado" class="alert alert-success mt-3 d-none"></div>
+        </div>
+    </section>
 
     <script src="./js/java.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
