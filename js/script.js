@@ -11,8 +11,6 @@ itens.forEach(item => {
 });
 
 
-
-// coisa do chat
 const links = document.querySelectorAll('.nav-link');
 const currentPage = window.location.pathname.split("/").pop();
 
@@ -23,10 +21,9 @@ if (link.getAttribute("href") === currentPage) {
 });
 
 
-// poli
 const numeros = document.querySelectorAll('.interacao');
 
-// para cada card
+
 numeros.forEach(contato => {
     contato.addEventListener('mouseenter', () => {
         contato.classList.add('hovered');
@@ -38,7 +35,6 @@ numeros.forEach(contato => {
 });
 
 
-//chat
 const imgs = [
   "./img/perfil_paula2 (1).jpeg",
   "./img/perfil_paula2 (2).jpeg"
@@ -64,7 +60,6 @@ proxima = () => {
     contador.innerHTML = `${pos + 1}/${imgs.length}`;
 }
 
-// ⏱️ troca automática
 setInterval(() => {
     proxima();
 }, 3000);

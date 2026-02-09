@@ -77,48 +77,46 @@
     </div>
 
     <section>
-        <div class="container py-4">
-            <h2 class="mb-4">🛒 Carrinho de Compras</h2>
+        <div class="container p-4">
+            <h2 class="mb-4">Encomende Artes</h2>
             <form id="formCarrinho">
-                <!-- Produtos -->
-                <div class="card p-3 mb-4">
+                <div class="card p-3 mb-4 bg-lilas ">
                     <h5>Produtos</h5>
 
                     <div class="row align-items-center mb-2">
-                        <div class="col">Mouse – R$ 50</div>
+                        <div class="col">Arte completa – R$ 550</div>
                         <div class="col-3">
-                            <input type="number" class="form-control qtd" data-nome="Mouse" data-preco="50" value="0"
+                            <input type="number" class="form-control qtd" data-nome="Arte_Completa" data-preco="550" value="0"
                                 min="0">
                         </div>
                     </div>
 
                     <div class="row align-items-center mb-2">
-                        <div class="col">Teclado – R$ 120</div>
+                        <div class="col">Esboço – R$ 120</div>
                         <div class="col-3">
-                            <input type="number" class="form-control qtd" data-nome="Teclado" data-preco="120" value="0"
+                            <input type="number" class="form-control qtd" data-nome="Esboço" data-preco="120" value="0"
                                 min="0">
                         </div>
                     </div>
 
                     <div class="row align-items-center">
-                        <div class="col">Fone – R$ 80</div>
+                        <div class="col">Arte completa apenas de rosto – R$ 380</div>
                         <div class="col-3">
-                            <input type="number" class="form-control qtd" data-nome="Fone" data-preco="80" value="0"
+                            <input type="number" class="form-control qtd" data-nome="Arte_rosto" data-preco="380" value="0"
                                 min="0">
                         </div>
                     </div>
                 </div>
 
-                <!-- Carrinho -->
                 <h5>Carrinho</h5>
                 <ul id="carrinho" class="list-group mb-3"></ul>
 
-                <button class="btn btn-primary w-100">
+                <button class="btn color-white bg-roxo interacao w-100">
                     Finalizar compra
                 </button>
             </form>
 
-            <!-- Total -->
+ 
             <div id="resultado" class="alert alert-success mt-3 d-none"></div>
         </div>
     </section>

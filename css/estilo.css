@@ -7,30 +7,15 @@ body{
     background-color: antiquewhite;
 }
 
-/* Rosa antigo: #D48FB3
-
-Lilás rosado: #CDB4DB
-
-Bege rosado: #F6E1D3
-
-Branco quente: #FFF8F2
-
-Marrom suave (texto): #4A3F35 */
-
 :root {
   --roxo-principal: #8E41CD;
   --roxo-escuro: #6D2FA3;
   --lilas: #C7A4E0;
-  --bege-fundo: #FFF0DB;
-  --bege-card: #F7E3C8;
-  --azul-profundo: #1E2A78;
-  --texto-principal: #2B2B2B;
   --rosa-destaque: #bc4b8f;
   --rosa-principal: rgb(216, 109, 198);
   --rosa: #E86FB7;
   --rosa-antigo: #D48FB3;
   --lilás-rosado: #CDB4DB;
-  --marrom-suave: #4A3F35;
 }
 
 ::-webkit-scrollbar{
@@ -133,13 +118,6 @@ span{
     margin: 60px 0px 0px 30px;
 }
 
-/* #titulo-sobre{
-    align-items: center;
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--roxo-escuro);
-} */
-
 #perfil{
     max-width: 20rem;
     height: auto;
@@ -179,7 +157,7 @@ span{
 
 .interacao.hovered{
     background-color: var(--lilas);
-    transform: translateY(-10px) scale(1.05); /* Levanta e aumenta */
+    transform: translateY(-10px) scale(1.05);
     outline: 1px solid var(--roxo-escuro);
 }
 
@@ -227,9 +205,6 @@ span{
     width: auto;
 }
 
-
-/* carros */
-
 #cards .cards{
     display: flex;
     justify-content: center;
@@ -246,7 +221,7 @@ span{
   border-radius: 8px;
 }
 
-/* Cards laterais */
+
 .card-lateral {
     position: relative;
     z-index: 1;
@@ -255,11 +230,11 @@ span{
     opacity: 80%;
 }
 
-/* Card central (em destaque) */
+
 .card-central {
   position: relative;
   z-index: 2;
-  margin: 0 -150px; /* faz sobrepor os laterais */
+  margin: 0 -150px;
   border: 2px solid #2B2B2B;
   border-radius: 10px;
   box-shadow: 0 10px 25px var(--azul-profundo);
@@ -268,7 +243,7 @@ span{
 .setinha {
     position: absolute;
     top: 40%;
-    z-index: 3; /* maior que os cards */
+    z-index: 3;
     font-size: 2rem;
     color: var(--bege-fundo);
     background-color: var(--roxo-principal);
@@ -281,7 +256,7 @@ span{
 }
 
 .seta-esquerda {
-  right: 935px; /* joga pra fora do card */
+  right: 935px; 
 }
 
 
